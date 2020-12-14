@@ -1,0 +1,59 @@
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between; /* горизантальная линия */
+    align-items: center; /* Вертикальная линия */
+    height: 80px;
+} 
+
+.header-logo img {
+    width: 140px;
+}
+
+.header-nav a {
+    color: #fff; /* 0-9 A-F - 16 HEX CODE */
+    text-transform: uppercase;
+    margin-left: 20px;
+    transition: .5s;
+}
+
+.nav-link:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.nav-link::after {
+    content: ' 123';
+}
+
+
+.parent {
+    width: 500px;
+    height: 500px;
+    border: 1px solid red;
+
+    margin-bottom: 1000px;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    background-color: lawngreen;
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    z-index: 2;
+}
+
+.second-child {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
