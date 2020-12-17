@@ -1,5 +1,11 @@
 .header {
-    background-color: black;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    /* bottom: 0; */
+    background-color: #343333;
     display: flex;
     justify-content: space-between; /* горизантальная линия */
     align-items: center; /* Вертикальная линия */
@@ -15,19 +21,82 @@
     text-transform: uppercase;
     margin-left: 20px;
     transition: .5s;
-}
 
-.nav-link:hover {
-    color: red;
-    text-decoration: underline;
+    position: relative;
+
+    /* padding: 20px;
+    border-radius: 30px; */
 }
 
 .nav-link::after {
-    content: ' 123';
+    content: '';
+    width: 0;
+    height: 1px;
+
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    transition: .5s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
 }
 
 
-.parent {
+/* .header-nav a:first-child {
+    background-color: aqua;
+}
+
+.header-nav a:nth-child(2n){
+    background-color: red;
+}
+
+.header-nav a:last-child {
+    background-color: yellow;
+} */
+
+
+/* 
+.first-item {
+    background-color: blue;;
+}
+
+.first-item:hover {
+    background-color: yellow;
+} */
+
+
+
+
+
+/* .nav-link:hover {
+    background-color: red;
+}
+
+.nav-link:hover::after {
+    background-color: transparent;
+} */
+
+
+/* .nav-link::after {
+    content: ' ';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background-color: #fff;
+
+    top: 45%;
+    right: -15px;
+
+    border-radius: 50%;
+} */
+
+
+/* .parent {
     width: 500px;
     height: 500px;
     border: 1px solid red;
@@ -56,4 +125,4 @@
     top: 0;
     left: 0;
     z-index: 4;
-}
+} */

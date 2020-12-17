@@ -1,0 +1,64 @@
+.main-home {
+    background-image: url('../../images/backgrounds/home-bg.jpg');
+    background-size: cover;
+    
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+    z-index: 5;
+}
+
+.home-content {
+    width: 40%;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.home-content h3 {
+    font-size: 72px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.home-content p {
+    font-size: 18px;
+}
+
+.line-icon i {
+    color: #FFD541;
+    font-size: 24px;
+}
+
+.line-icon {
+    margin: 20px 0;
+
+    position: relative;
+}
+
+.line-icon::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    display: block;
+    background-color: #fff;
+    top: 50%;
+    right: 15%;
+}
+
+.line-icon::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    display: block;
+    background-color: #fff;
+    top: 50%;
+    left: 15%;
+}
