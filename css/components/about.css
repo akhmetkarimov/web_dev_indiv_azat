@@ -28,3 +28,74 @@
     font-size: 15px;
     font-weight: 300;
 }
+
+
+
+.room-img {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.room-item img {
+    width: 100%;
+    transition: .5s;
+}
+
+.room-img a {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    color: #fff;
+    background-color: #5C98F3;
+
+    width: 180px;
+    height: 50px;
+    margin: auto;
+
+    font-size: 16px;
+    font-weight:600;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    opacity: 0;
+
+    transition: .5s;
+}
+
+.room-img:hover a {
+    opacity: 1;
+}
+
+.room-img:hover img {
+    transform: scale(1.2);    
+}
+
+.room-text {
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.room-text a {
+    font-size: 28px;
+    font-family: 'Playfair Display', serif;
+    transition: .4s;
+    color: #000;
+}
+
+.room-text a:hover {
+    color: #5C98F3;
+}
+
+.room-text p {
+    color: #5C98F3;
+}
